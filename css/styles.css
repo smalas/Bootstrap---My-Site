@@ -34,8 +34,8 @@ html{
 #cover .container-fluid {
   padding: 0 15%;
   background-color: #a5ccd1;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .intro {
