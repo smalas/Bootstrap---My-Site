@@ -21,6 +21,10 @@ p {
   margin: 0;
 }
 
+html{
+  height: -webkit-fill-available;
+}
+
 /* General */
 .container-fluid {
   padding: 7% 15%;
@@ -98,8 +102,8 @@ button.navbar-toggler:focus {
   background-image: url(../images/resume-background-image.jpg);
   margin-bottom: 0;
   padding: 0;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 #resume-top .container-fluid {
@@ -110,8 +114,8 @@ button.navbar-toggler:focus {
   z-index: 1;
   background-color: #a5ccd1;
   opacity: 0.8;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 /* chevron-down button */
