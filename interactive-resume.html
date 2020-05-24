@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sami Malas</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Boostrap CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Open+Sans:wght@400;700;800&family=Roboto:wght@400;700;900&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e6b9649bd0.js" crossorigin="anonymous"></script>
+
+  <!-- Full JQuery & my script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+  <script src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body id="resume">
+  <!-- Top Section -->
+  <section id="resume-top">
+    <div class="jumbotron resume-jumbo-top" data-position="center center">
+      <div class="container-fluid d-flex flex-column top-overlay">
+        <!-- Navbar -->
+        <div class="my-navbar mb-auto">
+          <nav class="navbar nav-pills navbar-expand-lg">
+            <a class="navbar-brand">Sami Malas</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#my-navbar" type="button" name="button" aria-expanded="false" aria-label="Toggle-Navigation">
+              <span><i class="fas fa-memory fa-lg"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="my-navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item" href=""><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item" href=""><a class="nav-link active" href="interactive-resume.html">Interactive Resume</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Name -->
+        <div class="title mb-auto">
+          <h1 class="resume-title">interactive resume.</h1>
+        </div>
+      </div>
+
+      <!-- Chevron Down -->
+      <a href="#profile" class="scroll-down smooth-scroll">
+        <i class="fas fa-chevron-down fa-3x"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section Navbar -->
+  <section id="resume-nav">
+    <nav class="navbar navbar-expand-lg">
+      <button class="navbar-toggler pt-2 pb-2 pr-3 pl-3" data-toggle="collapse" data-target="#my-resume-navbar" type="button" name="button" aria-expanded="false" aria-label="Toggle-Navigation">
+        <span><i class="fas fa-memory fa-lg"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="my-resume-navbar">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item"><a class="navbar-item smooth-scroll" href="#profile">Profile</a></li>
+          <hr class="nav-hr">
+          <li class="nav-item"><a class="navbar-item smooth-scroll" href="#education">Education</a></li>
+          <hr class="nav-hr">
+          <li class="nav-item"><a class="navbar-item smooth-scroll" href="#leadership-and-activities">Leadership & Activities</a></li>
+          <hr class="nav-hr">
+          <li class="nav-item"><a class="navbar-item smooth-scroll" href="#work-experience">Work Experience</a></li>
+          <hr class="nav-hr">
+          <li class="nav-item"><a class="navbar-item smooth-scroll" href="#skills-interests">Skills & Interests</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="profile" class="odd-section">
+    <div class="container-fluid">
+      <h2 class="resume-h2">Profile</h2>
+      <hr>
+      <div class="container clearfix">
+        <img src="images/Sami-Circle.png" alt="Picture of me" class="profile-picture mx-auto float-lg-left pr-4">
+        <div class="row">
+          <div class="col">
+            <h3 class="text-lg-left pt-md-0 pt-sm-4">About me</h3>
+            <p class="text-lg-left about-me-content"> I am a graduate of Colsumbia University and Claremont McKenna College where I majored in both Computer Engineering and Economics.
+              I will be working with Accenture this fall as a Digital Consultant in Boston, MA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="even-section">
+    <div class="container-fluid">
+      <h2 class="resume-h2">Education</h2>
+      <hr>
+      <!-- Claremont McKenna -->
+      <div class="row education-row mb-2">
+        <div class="col-lg-6 education-data text-left ">
+          <div class="d-flex">
+            <p class="e-data"><strong>Claremont McKenna College,</strong> Claremont, CA</p>
+            <a href="http://www.cmc.edu" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+          </div>
+          <p>May 2020</p>
+        </div>
+        <div class="col-lg-6 text-lg-right text-left font-italic">
+          <p>Bachelors of Arts in Economics</p>
+        </div>
+      </div>
+
+      <!-- Columbia -->
+      <div class="row education-row mb-2">
+        <div class="col-lg-6 education-data text-left ">
+          <div class="d-flex">
+            <p class="e-data"><strong>Columbia University,</strong> New York, NY</p>
+            <a href="http://www.columbia.edu" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+          </div>
+          <p>May 2020</p>
+        </div>
+        <div class="col-lg-6 text-lg-right text-left font-italic">
+          <p>Bachelors of Science in Computer Engineering</p>
+        </div>
+      </div>
+
+      <!-- American School of Dubai -->
+      <div class="row education-row mb-2">
+        <div class="col-lg-6 education-data text-left ">
+          <div class="d-flex">
+            <p class="e-data"><strong>American School of Dubai,</strong> Dubai, UAE</p>
+            <a href="http://www.columbia.edu" target="_blank"><i class="fas fa-external-link-square-alt"></i></a>
+          </div>
+          <p>June 2015</p>
+        </div>
+        <div class="col-lg-6 text-lg-right text-left font-italic">
+          <p>High School Diploma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership-and-activities" class="odd-section">
+    <div class="container-fluid">
+      <h2 class="resume-h2">Leadership & Activities</h2>
+      <hr>
+      <!-- Formula SAE -->
+      <div class="row la-row">
+        <div class="col-lg-9 text-left">
+          <p class="font-weight-bold">Formula SAE</p>
+        </div>
+        <div class="col-lg-3 text-lg-right text-left font-italic pl-lg-0 date">
+          <p>Jan 2019 - May 2020</p>
+        </div>
+        <div class="col-lg-9 text-left">
+          <ul class="activity-list">
+            <li>Contributed to the construction of Columbia’s first Electric Vehicle</li>
+            <li>Developed the data collection systems for the EV</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Student Affairs BoT -->
+      <div class="row la-row">
+        <div class="col-lg-9 text-left">
+          <p class="font-weight-bold">Student Affairs Board of Trustee Committee</p>
+        </div>
+        <div class="col-lg-3 text-lg-right text-left font-italic pl-lg-0 date">
+          <p>May 2017 - May 2018</p>
+        </div>
+        <div class="col-lg-9 text-left">
+          <ul class="activity-list">
+            <li>Provided student perspective on the Claremont McKenna College board of trustees student affairs committee</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Personal and Social Responsibility Committee -->
+      <div class="row la-row">
+        <div class="col-lg-9 text-left">
+          <p class="font-weight-bold">Personal and Social Responsibility Committee for High-risk Drinking and Drug Use</p>
+        </div>
+        <div class="col-lg-3 text-lg-right text-left font-italic pl-lg-0 date">
+          <p>Nov 2016 - May 2018</p>
+        </div>
+        <div class="col-lg-9 text-left">
+          <ul class="activity-list">
+            <li>Developed policies in tandem with administrators</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FYG -->
+      <div class="row la-row">
+        <div class="col-lg-9 text-left">
+          <p class="font-weight-bold">First Year Guide</p>
+        </div>
+        <div class="col-lg-3 text-lg-right text-left font-italic pl-lg-0 date">
+          <p>Sep 2016 - May 2018</p>
+        </div>
+        <div class="col-lg-9 text-left">
+          <ul class="activity-list">
+            <li>Facilitated bonding between twenty incoming first years through their first year</li>
+            <li>Provided resources to first years</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work-experience" class="even-section">
+    <div class=" container-fluid">
+      <h2 class="resume-h2">Work Experience</h2>
+      <hr>
+      <!-- BoA -->
+      <div class="row work-row text-left">
+        <div class="col-lg-9">
+          <p>Strategy & Management Summer Analyst at <strong>Bank of America</strong></p>
+          <p class="work-title"></p>
+          <p class="font-weight-bold pl-1"></p>
+        </div>
+        <div class="col-lg-3 text-lg-right font-italic date">
+          <p>June - Aug 2019</p>
+        </div>
+        <div class="col-12 font-italic">
+          <p>New York, NY</p>
+        </div>
+        <div class="col-lg-9">
+          <ul>
+            <li>Analyzed causes of attrition within Small Business Bank</li>
+            <li>Extracted and examined performance data to calculate the financial impact of attrition as well as recovery time</li>
+            <li>Communicated findings and recommended tangible goals to address the issue</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tasl -->
+      <div class="row work-row text-left">
+        <div class="col-lg-9">
+          <p>Founder & CEO at <strong>Tasl Inc</strong></p>
+        </div>
+        <div class="col-lg-3 text-lg-right font-italic date">
+          <p>2017 - 2020</p>
+        </div>
+        <div class="col-12 font-italic">
+          <p>McLean, VA</p>
+        </div>
+        <div class="col-lg-9">
+          <ul>
+            <li>Researched and articulated a problem in the efficacy of information distribution within college communities</li>
+            <li>Conducted market research to synthesize both a business and development plan</li>
+            <li>Worked with and led a team to develop a prototype, feature set and legal documents</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tasl -->
+      <div class="row work-row text-left">
+        <div class="col-lg-9">
+          <p>Business Development Intern at <strong>Mahlzeit</strong></p>
+        </div>
+        <div class="col-lg-3 text-lg-right font-italic date">
+          <p>June - Aug 2017</p>
+        </div>
+        <div class="col-12 font-italic">
+          <p>Amsterdam, The Netherlands</p>
+        </div>
+        <div class="col-lg-9">
+          <ul>
+            <li>Pitched the concept to numerous clients securing three deals</li>
+            <li>Created product development, prototyping and deployment criterion</li>
+            <li>Developed business strategy, pitch deck and investment strategy</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ASCMC - President -->
+      <div class="row work-row text-left">
+        <div class="col-lg-9">
+          <p>President & CEO at <strong>Associated Students of Claremont McKenna College</strong></p>
+        </div>
+        <div class="col-lg-3 text-lg-right font-italic date">
+          <p>Mar 2017 - Mar 2018</p>
+        </div>
+        <div class="col-12 font-italic">
+          <p>Claremont, CA</p>
+        </div>
+        <div class="col-lg-9">
+          <ul>
+            <li>Chairs and organizes board meetings</li>
+            <li>Manages the board and their initiatives</li>
+            <li>Manages fiduciary responsibility of the corporation</li>
+            <li>Works with administrators regarding student issues and how to better student life</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ASCMC - COO -->
+      <div class="row work-row text-left">
+        <div class="col-lg-9">
+          <p>Chief Operations Officer at <strong>Associated Students of Claremont McKenna College</strong></p>
+        </div>
+        <div class="col-lg-3 text-lg-right font-italic date">
+          <p>Mar 2016 - Mar 2017</p>
+        </div>
+        <div class="col-12 font-italic">
+          <p>Claremont, CA</p>
+        </div>
+        <div class="col-lg-9">
+          <ul>
+            <li>Maintained minutes at all Executive Board meetings</li>
+            <li>Catalogued and maintained inventory and storage</li>
+            <li>Sat on elections committee and selected applicants for various positions around campus</li>
+            <li>Discussed and approved yearly budget for ASCMC</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BECO -->
+      <div class="row work-row text-left">
+        <div class="col-lg-9">
+          <p>Intern at <strong>BECO Capital</strong></p>
+        </div>
+        <div class="col-lg-3 text-lg-right font-italic date">
+          <p>June - July 2016</p>
+        </div>
+        <div class="col-12 font-italic">
+          <p>Dubai, UAE</p>
+        </div>
+        <div class="col-lg-9">
+          <ul>
+            <li>Assessed the online presence of portfolio companies</li>
+            <li>Compiled and delivered market analyses of prospective investments</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="skills-interests" class="odd-section">
+    <div class="container-fluid clearfix pb-5">
+      <h2 class="resume-h2">Skills & Interests</h2>
+      <hr>
+
+      <!-- Technical -->
+      <div class="clearfix mb-3">
+        <h3 class="text-lg-left">Technical</h3>
+        <!-- Image -->
+        <div class="container skill-image-background d-flex justify-content-center align-items-center mx-lg-0 float-lg-left mb-xl-0 mb-sm-2">
+          <img class="technical-image skill-image" src="images/technical-skills.png" alt="">
+        </div>
+        <!-- Skills -->
+        <div class="row mt-4">
+          <!-- Skill Column 1 -->
+          <div class="col-xl-6">
+            <!-- General Purpose PLs -->
+            <div class="dropdown skill-dropdown mb-2">
+              <button class="btn btn-block text-left skill-button" type="button" id="dropdownMenuButton-technical-pls" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                General Purpose PLs
+              </button>
+              <div class="dropdown-menu skill-dropdown-menu" aria-labelledby="dropdownMenuButton-technical-pls">
+                <!-- Java -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Java</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- Python -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Python</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- C -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>C</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- C++ -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>C++</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="dropdown skill-dropdown mb-2">
+              <button class="btn btn-block text-left skill-button" type="button" id="dropdownMenuButton-technical-webdev" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Web Development
+              </button>
+              <div class="dropdown-menu skill-dropdown-menu" aria-labelledby="dropdownMenuButton-technical-webdev">
+                <!-- HTML -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>HTML(5)</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- CSS -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>CSS(3)</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- Bootstrap -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Bootstrap(4)</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- JQuery -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>JQuery</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+              </div>
+            </div>
+
+            <!-- Databases & Data Modelling -->
+            <div class="dropdown skill-dropdown mb-2">
+              <button class="btn btn-block text-left skill-button" type="button" id="dropdownMenuButton-technical-db" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Databases & Data Modelling
+              </button>
+              <div class="dropdown-menu skill-dropdown-menu" aria-labelledby="dropdownMenuButton-technical-db">
+                <!-- SQL -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>SQL</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- Tableau -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Tableau</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Col 2 -->
+          <div class="col-xl-6">
+            <!-- Microsoft Office -->
+            <div class="dropdown skill-dropdown mb-2">
+              <button class="btn btn-block text-left skill-button" type="button" id="dropdownMenuButton-technical-mo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Microsoft Office
+              </button>
+              <div class="dropdown-menu skill-dropdown-menu" aria-labelledby="dropdownMenuButton-technical-mo">
+                <!-- Word -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Word</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </span>
+                <!-- PowerPoint -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>PowerPoint</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </span>
+                <!-- Excel -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Excel</p>
+                  <div class="stars">
+                    </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+              </div>
+            </div>
+
+            <!-- Adobe Suite -->
+            <div class="dropdown skill-dropdown mb-2">
+              <button class="btn btn-block text-left skill-button" type="button" id="dropdownMenuButton-technical-as" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Adobe Suite
+              </button>
+              <div class="dropdown-menu skill-dropdown-menu" aria-labelledby="dropdownMenuButton-technical-as">
+                <!-- Photoshop -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Photoshop</p>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+                <!-- Premiere -->
+                <span class="dropdown-item-text d-flex justify-content-between">
+                  <p>Premiere</p>
+                  <div class="stars">
+                    </i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="clearfix mb-3">
+        <h3 class="text-lg-left">Languages</h3>
+        <!-- Image -->
+        <div class="container skill-image-background d-flex justify-content-center align-items-center float-lg-left mx-lg-0 mb-xl-0 mb-sm-2 mr-lg-4">
+          <img class="language-image skill-image" src="images/languages-skills.png" alt="">
+        </div>
+        <!-- Skills -->
+        <div class="row mt-lg-4 d-flex justify-content-lg-start justify-content-md-center">
+          <!-- Skill Column -->
+          <div class="col-xl-6 col-lg-12 col-md-6 pr-lg-5">
+            <!-- English -->
+            <span class="d-flex justify-content-between mb-2">
+              <p>English</p>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </span>
+            <!-- Spanish -->
+            <span class="d-flex justify-content-between mb-2">
+              <p>Spanish</p>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+              </div>
+            </span>
+            <!-- Arabic -->
+            <span class="d-flex justify-content-between mb-2">
+              <p>Arabic</p>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i><i class="fas fa-star empty-star"></i>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hobbies -->
+      <div class="clearfix mb-3">
+        <h3 class="text-lg-left">Hobbies</h3>
+        <!-- Image -->
+        <div class="container skill-image-background d-flex justify-content-center align-items-center float-lg-left mx-lg-0 mb-xl-0 mb-sm-2 mr-lg-4">
+          <img class="hobbies-image skill-image" src="images/hobbies-skills.png" alt="">
+        </div>
+        <!-- Skills -->
+        <div class="row mt-lg-4 d-flex justify-content-lg-start justify-content-md-center">
+          <!-- Skill Column -->
+          <div class="col-xl-6 col-lg-12 col-md-6 pr-lg-5">
+            <!-- Baking -->
+            <span class="d-flex justify-content-start mb-2">
+              <p>Baking</p>
+            </span>
+            <!-- Music -->
+            <span class="d-flex justify-content-start mb-2">
+              <p>Music</p>
+            </span>
+            <!-- Travel -->
+            <span class="d-flex justify-content-start mb-2">
+              <p>Travel</p>
+            </span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cover-foot mt-auto even-section pt-2 pb-2">
+    <span class="social-icons">
+      <a href="mailto:sami.i.malas@gmail.com" target="_blank" class="social-icon pl-2 pr-2"><i class="fas fa-envelope-square fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/sami-malas-85095876/" target="_blank" class="social-icon pl-2 pr-2"><i class="fab fa-linkedin fa-2x"></i></a>
+    </span>
+    <p class="copyright pt-1">© Sami Malas 2020</p>
+  </footer>
+</body>
+
+</html>

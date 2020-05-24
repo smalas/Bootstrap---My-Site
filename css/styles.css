@@ -1,0 +1,279 @@
+/* Available Google Fonts */
+/* font-family: 'Montserrat', sans-serif; Black available
+font-family: 'Open Sans', sans-serif; Bold Black available
+font-family: 'Roboto', sans-serif; Bold Black available
+font-family: 'Sacramento', cursive; */
+/* General */
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+/* General */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Cover Page General */
+#cover {
+  background-color: #a5ccd1;
+  height: 100vh;
+}
+
+#cover .container-fluid {
+  padding: 0 15%;
+  height: 100%;
+}
+
+.intro {
+  font-family: "Sacramento", sans-serif;
+  font-size: 5rem;
+}
+
+/* Cover Content & Footer */
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-foot {
+  color: #fcfff7;
+  font-size: 0.75rem;
+}
+
+.social-icon:hover {
+  color: #36827f;
+}
+
+/* Navbar */
+.nav-pills .nav-link.active {
+  background-color: #6e8898;
+}
+
+.nav-pills .nav-link.active:hover {
+  color: #fcfff7;
+}
+
+.cover-content, .social-icon, .navbar-nav .nav-link, .navbar-brand, .navbar-brand:hover {
+  color: #022b3a;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #374a67;
+}
+
+button.navbar-toggler:focus {
+  outline: 0;
+}
+
+/*------------------------ Interactive Resume ------------------- */
+/* General */
+#resume .date > p {
+  min-width: 157.2px;
+}
+
+.even-section {
+  background-color: #a5ccd1;
+  color: #fcfff7;
+}
+
+.odd-section{
+  background-color: #fcfff7;
+}
+
+/* Top */
+#resume-top .jumbotron {
+  background: no-repeat top center fixed;
+  background-size: cover;
+  background-image: url(../images/resume-background-image.jpg);
+  margin-bottom: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#resume-top .container-fluid {
+  padding: 0 15%;
+}
+
+.top-overlay {
+  z-index: 1;
+  background-color: #a5ccd1;
+  opacity: 0.8;
+  height: 100%;
+}
+
+/* chevron-down button */
+.fa-chevron-down, a.scroll-down {
+  color: #fcfff7;
+}
+
+.jumbotron .scroll-down {
+  height: 80px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  background-color: #022b3a;
+}
+
+/* Resume Navbar */
+#resume-nav .navbar {
+  width: 110px;
+  position: absolute;
+  right: 3%;
+  background-color: #022b3a;
+  padding: 0 7px;
+}
+
+#resume-nav .nav-item {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#resume-nav .nav-hr {
+  margin: auto;
+  border-top: solid 2px #fcfff7;
+  width: 20%;
+}
+
+#resume-nav .navbar-item {
+  margin: auto;
+  color: #eaf6f6;
+  font-size: .9rem;
+}
+
+#resume-nav a.navbar-item:hover {
+  text-decoration: none;
+  color: #e4fde1;
+}
+
+.fixed #resume-nav .navbar {
+  position: fixed;
+  top: 40px;
+}
+
+#resume-nav .navbar-toggler {
+  color: #eaf6f6;
+}
+
+/* Profile */
+.profile-picture {
+  height: 230px;
+}
+
+.about-me-content {
+  line-height: 2rem;
+}
+
+/* Education */
+#education a {
+  color: #36827f;
+  text-decoration: none;
+}
+
+.e-data{
+  min-width: 385px;
+}
+
+/* Skills & Interests*/
+.skill-image-background{
+  background-color: #36827f;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.technical-image, .language-image, .hobbies-image{
+  height: 80%;
+}
+
+.stars{
+  color: #374a67;
+}
+
+.empty-star{
+  color: #A1AEB9;
+}
+
+/* dropdown */
+.skill-button{
+  background-color: #36827f;
+  color: #fcfff7;
+}
+
+.skill-button:hover{
+  background-color: #e4fde1;
+  border: solid 1px #022b3a;
+  color: #022b3a;
+}
+
+.skill-button:focus{
+  box-shadow: 0 0 0 0.1rem #022b3a;
+}
+
+.skill-dropdown-menu{
+  background-color: #fcfff7;
+  border: none;
+  width: 100%;
+}
+
+/* ----------------------------------Tablet & Smartphone ------------------------------------*/
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding: 40px 60px;
+  }
+
+  #cover .container-fluid, #resume-top .container-fluid {
+    padding: 0;
+  }
+
+  .jumbotron .scroll-down {
+    width: 100%;
+    height: 50px;
+    right: 0;
+  }
+
+  #resume-nav .navbar {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color: #022b3a;
+    padding: 0 7px;
+    justify-content: flex-end;
+  }
+
+  #resume-nav .nav-item {
+    height: 40px;
+  }
+
+  .fixed #resume-nav .navbar {
+    top: 0;
+  }
+  /* education */
+  .e-data{
+    min-width: 100%;
+  }
+}
+
+/* ----------------------------------Smartphone ------------------------------------*/
+@media (max-width: 767.98px) {}
