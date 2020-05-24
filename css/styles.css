@@ -27,14 +27,11 @@ p {
 }
 
 /* Cover Page General */
-#cover {
-  background-color: #a5ccd1;
-  height: 100vh;
-}
-
 #cover .container-fluid {
   padding: 0 15%;
-  height: 100%;
+  background-color: #a5ccd1;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 .intro {
@@ -101,7 +98,8 @@ button.navbar-toggler:focus {
   background-image: url(../images/resume-background-image.jpg);
   margin-bottom: 0;
   padding: 0;
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 #resume-top .container-fluid {
@@ -112,7 +110,8 @@ button.navbar-toggler:focus {
   z-index: 1;
   background-color: #a5ccd1;
   opacity: 0.8;
-  height: 100%;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 /* chevron-down button */
