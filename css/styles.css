@@ -279,4 +279,8 @@ button.navbar-toggler:focus {
 }
 
 /* ----------------------------------Smartphone ------------------------------------*/
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  h2{
+    font-size: 2rem;
+  }
+}
