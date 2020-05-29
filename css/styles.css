@@ -30,9 +30,51 @@ html{
   padding: 7% 15%;
 }
 
-/* Cover Page General */
-#cover .container-fluid {
+/* If it's a top section */
+.top-section .container-fluid{
   padding: 0 15%;
+}
+
+.even-section {
+  background-color: #a5ccd1;
+  color: #fcfff7;
+}
+
+.odd-section{
+  background-color: #fcfff7;
+}
+
+/* Navbar */
+.nav-pills .nav-link.active {
+  background-color: #6e8898;
+}
+
+.nav-pills .nav-link.active:hover {
+  color: #fcfff7;
+}
+
+.cover-content, .social-icon, .navbar-nav .nav-link, .navbar-brand, .navbar-brand:hover {
+  color: #022b3a;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #374a67;
+}
+
+button.navbar-toggler:focus {
+  outline: 0;
+}
+
+.my-navbar{
+  z-index: 2;
+}
+
+.my-navbar .nav-item{
+  padding-left: 3px;
+}
+
+/* --------------------------------------------------------------- Cover Page ------------------------------------------------------------ */
+#cover .container-fluid {
   background-color: #a5ccd1;
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -59,40 +101,11 @@ html{
   color: #36827f;
 }
 
-/* Navbar */
-.nav-pills .nav-link.active {
-  background-color: #6e8898;
-}
 
-.nav-pills .nav-link.active:hover {
-  color: #fcfff7;
-}
-
-.cover-content, .social-icon, .navbar-nav .nav-link, .navbar-brand, .navbar-brand:hover {
-  color: #022b3a;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #374a67;
-}
-
-button.navbar-toggler:focus {
-  outline: 0;
-}
-
-/*------------------------ Interactive Resume ------------------- */
+/*----------------------------------------------- Interactive Resume --------------------------------------------- */
 /* General */
 #resume .date > p {
   min-width: 157.2px;
-}
-
-.even-section {
-  background-color: #a5ccd1;
-  color: #fcfff7;
-}
-
-.odd-section{
-  background-color: #fcfff7;
 }
 
 /* Top */
@@ -104,10 +117,6 @@ button.navbar-toggler:focus {
   padding: 0;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-}
-
-#resume-top .container-fluid {
-  padding: 0 15%;
 }
 
 .top-overlay {
@@ -135,7 +144,7 @@ button.navbar-toggler:focus {
   background-color: #022b3a;
 }
 
-/* Resume Navbar */
+/* Resume Navbar -- also used for tools */
 #resume-nav .navbar {
   width: 110px;
   position: absolute;
@@ -239,19 +248,77 @@ button.navbar-toggler:focus {
   width: 100%;
 }
 
-/* ----------------------------------Tablet & Smartphone ------------------------------------*/
+/* --------------------------------- TOOLS --------------------------------------------------- */
+#tools{
+  background-color: #a5ccd1;
+}
+
+.tool-category img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tool-image-button{
+  max-height: auto;
+  max-width: 50%;
+}
+
+.expanded-image-container{
+  width: 50%;
+}
+
+.type-choices .expanded-image-container{
+  max-width: 40%;
+}
+
+.expanded-image{
+  position: fixed;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(1, 17, 23, 0.9);
+  z-index: 3;
+
+  visibility: hidden;
+}
+
+.active{
+  visibility: visible;
+}
+
+.tdee, .tdee:hover, a.tdee{
+  color: black;
+  text-decoration: none;
+  font-family: 'Candara', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.codeply, .codeply:hover, a.codeply{
+  font-family: 'Lexend Deca',sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------------------------LG ------------------------------------ */
+@media (max-width: 1199.98px){
+  .type-choices .expanded-image-container{
+    max-width: 50%;
+  }
+}
+
+/* ----------------------------------MD & SM ------------------------------------*/
 @media (max-width: 991.98px) {
   .container-fluid {
     padding: 40px 60px;
   }
 
-  #cover .container-fluid, #resume-top .container-fluid {
+  .top-section .container-fluid {
     padding: 0;
   }
 
   .jumbotron .scroll-down {
     width: 100%;
-    height: 50px;
+    height: 40px;
     right: 0;
   }
 
@@ -276,11 +343,41 @@ button.navbar-toggler:focus {
   .e-data{
     min-width: 100%;
   }
+
+  /*------------------------------------- TOOLS -------------------------------- */
+  .expanded-image-container{
+    width: 80%;
+  }
+
+  .type-choices .expanded-image-container{
+    max-width: 60%;
+  }
 }
 
-/* ----------------------------------Smartphone ------------------------------------*/
+/* ----------------------------------SM ------------------------------------*/
 @media (max-width: 767.98px) {
   h2{
     font-size: 2rem;
+  }
+
+  .tool-category img{
+    max-width: 20%;
+    max-height: 20%;
+    min-width: 95px;
+  }
+
+  .expanded-image-container{
+    width: 100%;
+  }
+
+  .type-choices .expanded-image-container{
+    max-width: 80%;
+  }
+}
+
+/* ----------------------------------XS ------------------------------------*/
+@media (max-width: 575.98px) {
+  .type-choices .expanded-image-container{
+    max-width: 100%;
   }
 }
